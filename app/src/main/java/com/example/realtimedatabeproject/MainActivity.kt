@@ -54,6 +54,8 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        //Fetch Data
+
     database.addValueEventListener(object : ValueEventListener{
         override fun onDataChange(snapshot: DataSnapshot) {
             userList.clear()
